@@ -29,6 +29,7 @@ namespace YoutubeThumbnailImageDownloader
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             label1 = new Label();
             txtYoutubeLink = new TextBox();
             btnParse = new Button();
@@ -107,10 +108,10 @@ namespace YoutubeThumbnailImageDownloader
             Controls.Add(btnParse);
             Controls.Add(txtYoutubeLink);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "frmMain";
-            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Youtube Thumbnail Image Downloader";
             groupBox1.ResumeLayout(false);
